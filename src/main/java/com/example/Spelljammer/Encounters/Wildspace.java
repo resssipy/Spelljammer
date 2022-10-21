@@ -20,6 +20,9 @@ public class Wildspace {
             return "1 cosmic horror" + "<br>" +
                     "Asleep: " + asleep + "<br>" +
                     "Initial Attitude: " + attitude.getAttitude(dice.d6());
+        } else if(encounter == 5) {
+            return "1 esthetic pioleted by 1 reigar" + "<br>" +
+                    "Initial Attitude: " + attitude.getAttitude(dice.d12());
         }
         return "encounter";
     }
