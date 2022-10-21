@@ -1,7 +1,6 @@
 package com.example.Spelljammer.Encounters;
 
 import com.example.Spelljammer.Dice;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,7 +20,7 @@ public class Wildspace {
                     "Asleep: " + asleep + "<br>" +
                     "Initial Attitude: " + attitude.getAttitude(dice.d6());
         } else if(encounter == 5) {
-            return "1 esthetic pioleted by 1 reigar" + "<br>" +
+            return "1 esthetic piloted by 1 reigar" + "<br>" +
                     "Initial Attitude: " + attitude.getAttitude(dice.d12());
         }
         return "encounter";
